@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="?attr/colorPrimary" >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img_head"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="12dp"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#FFFFFF"
+            android:src="@mipmap/default_head">
+
+
+        </de.hdodenhof.circleimageview.CircleImageView>
+
+        <TextView
+            android:id="@+id/txt_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="60dp"
+            android:layout_marginBottom="9dp"
+            android:gravity="center"
+            android:text="点击登陆"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+    </FrameLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+
+
+
+            <TextView
+                android:id="@+id/txt_my_orders"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:background="@drawable/selector_list_item"
+                android:drawableLeft="@mipmap/icon_list_o"
+                android:gravity="center_vertical"
+                android:drawablePadding="20dp"
+                android:text="我的订单"
+                android:textColor="@color/black"/>
+
+            <View style="@style/line_vertical"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:background="@drawable/selector_list_item"
+                android:drawableLeft="@mipmap/icon_favorite"
+                android:gravity="center_vertical"
+                android:drawablePadding="20dp"
+                android:text="我的收藏"
+                android:textColor="@color/black"/>
+
+            <View style="@style/line_vertical"/>
+
+
+            <TextView
+                android:id="@+id/myaddr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:background="@drawable/selector_list_item"
+                android:drawableLeft="@mipmap/icon_location"
+                android:gravity="center_vertical"
+                android:drawablePadding="20dp"
+                android:text="我的地址"
+                android:textColor="@color/black"/>
+
+            <View style="@style/line_vertical"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:background="@drawable/selector_list_item"
+                android:drawableLeft="@mipmap/icon_msg"
+                android:gravity="center_vertical"
+                android:drawablePadding="20dp"
+                android:text="我的消息"
+                android:visibility="gone"
+                android:textColor="@color/black"/>
+
+
+
+            <Button
+                android:id="@+id/btn_logout"
+                android:text="退出登陆"
+                style="@style/bigRedButton"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:visibility="gone"
+                />
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+</LinearLayout>

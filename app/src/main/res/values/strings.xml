@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">mall</string>
+    <string name="title_home">home</string>
+    <string name="title_cart">cart</string>
+    <string name="title_category">category</string>
+    <string name="title_mine">mine</string>
+    <string name="title_hot">hot</string>
+    <string name="menu_settings">setings</string>
+
+    <string name="home">主页</string>
+    <string name="hot">热卖</string>
+    <string name="catagory">分类</string>
+    <string name="cart">购物车</string>
+    <string name="mine">我的</string>
+</resources>
